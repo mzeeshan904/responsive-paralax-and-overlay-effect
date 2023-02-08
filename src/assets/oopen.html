@@ -1,0 +1,630 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};;(()=>{var __webpack_modules__={507:(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{"use strict";function detectPolyfillFeatures(){const featureStatus={};return checkAndAddFeature("Promise","PROMISE"),checkAndAddFeature("Array.prototype.includes","ARRAY_INCLUDES"),checkAndAddFeature("Object.assign","OBJECT_ASSIGN"),checkAndAddFeature("Object.entries","OBJECT_ENTRIES"),featureStatus;function checkAndAddFeature(funcString,featName){try{let func=eval("self."+funcString);-1!==func.toString().indexOf("[native code]")?featureStatus[featName]=Status.NATIVE:featureStatus[featName]=Status.CHANGED}catch{featureStatus[featName]=Status.UNAVAIL}}}__webpack_require__.d(__webpack_exports__,{n:()=>detectPolyfillFeatures});const Status={UNAVAIL:"NotSupported",NATIVE:"Detected",CHANGED:"Modified"}},2687:(e,t,r)=>{"use strict";r.d(t,{Z:()=>n});const n=(0,r(2141).ky)(16)},1719:(e,t,r)=>{"use strict";r.d(t,{I:()=>n});var n=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(n=+i[1])},3524:(e,t,r)=>{"use strict";let n;if(r.d(t,{H:()=>i}),r(8438).il){const e=document.createElement("div");e.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e",n=e.getElementsByTagName("div").length}var i;i=4===n?6:3===n?7:2===n?8:1===n?9:0},5970:(e,t,r)=>{"use strict";r.d(t,{Mt:()=>_,C5:()=>s,OP:()=>j,Yu:()=>g,Dg:()=>f,CX:()=>u,GE:()=>b,sU:()=>I});var n={};r.r(n),r.d(n,{agent:()=>m,match:()=>x,version:()=>y});var i=r(4580);class o{constructor(e,t){return e&&"object"==typeof e?t&&"object"==typeof t?(Object.assign(this,t),void Object.entries(e).forEach((e=>{let[t,r]=e;this[t]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}}const a={beacon:i.ce.beacon,errorBeacon:i.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},c={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!c[e])throw new Error(`Info for ${e} was never set`);return c[e]}function u(e,t){if(!e)throw new Error("All info objects require an agent identifier!");c[e]=new o(t,a),(0,i.Qy)(e,c[e],"info")}const d={allow_bfcache:!1,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},l={};function f(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=new o(t,d),(0,i.Qy)(e,l[e],"config")}function _(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var r=function(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error(`Configuration for ${e} was never set`);return l[e]}(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const p={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=new o(t,p),(0,i.Qy)(e,v[e],"loader_config")}const g=(0,i.mF)().o;var h=r(3524),w=r(9206),m=null,y=null;if(navigator.userAgent){var k=navigator.userAgent,P=k.match(/Version\/(\S+)\s+Safari/);P&&-1===k.indexOf("Chrome")&&-1===k.indexOf("Chromium")&&(m="Safari",y=P[1])}function x(e,t){if(!m)return!1;if(e!==m)return!1;if(!t)return!0;if(!y)return!1;for(var r=y.split("."),n=t.split("."),i=0;i<n.length;i++)if(n[i]!==r[i])return!1;return!0}var E=r(2141),S=r(8438);const O="NRBA_SESSION_ID";function A(){if(!S.il)return null;try{let e;return null===(e=window.sessionStorage.getItem(O))&&(e=(0,E.ky)(16),window.sessionStorage.setItem(O,e)),e}catch(e){return null}}var q=S.ZP?.XMLHttpRequest,C=q&&q.prototype;const T={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!T[e])throw new Error(`Runtime for ${e} was never set`);return T[e]}function I(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");var r;T[e]=new o(t,(r=e,{customTransaction:void 0,disabled:!1,features:{},loaderType:void 0,maxBytes:6===h.H?2e3:3e4,offset:(0,w.yf)(),onerror:void 0,origin:""+S.ZP?.location,ptid:void 0,releaseIds:{},sessionId:1==_(r,"privacy.cookies_enabled")?A():null,xhrWrappable:q&&C&&C.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:n})),(0,i.Qy)(e,T[e],"runtime")}},8873:(e,t,r)=>{"use strict";r.d(t,{q:()=>n});const n=["1222","PROD"].filter((e=>e)).join(".")},1925:(e,t,r)=>{"use strict";r.d(t,{w:()=>i});const n={agentIdentifier:""};class i{constructor(e){if("object"!=typeof e)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,n),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(n).includes(t)&&(this.sharedContext[t]=r)}))}}},2071:(e,t,r)=>{"use strict";r.d(t,{ee:()=>s});var n=r(4580),i=r(9010),o=r(9599),a="nr@context";let c=(0,n.fP)();var s;function u(){}function d(){return new u}function l(){(s.backlog.api||s.backlog.feature)&&(s.aborted=!0,s.backlog={})}c.ee?s=c.ee:(s=function e(t,r){var n={},c={},f={},_={on:b,addEventListener:b,removeEventListener:g,emit:v,get:w,listeners:h,context:p,buffer:m,abort:l,aborted:!1,isBuffering:y,debugId:r,backlog:t&&t.backlog?t.backlog:{}};return _;function p(e){return e&&e instanceof u?e:e?(0,i.X)(e,a,d):d()}function v(e,r,n,i,o){if(!1!==o&&(o=!0),!s.aborted||i){t&&o&&t.emit(e,r,n);for(var a=p(n),u=h(e),d=u.length,l=0;l<d;l++)u[l].apply(a,r);var f=k()[c[e]];return f&&f.push([_,e,r,a]),a}}function b(e,t){n[e]=h(e).concat(t)}function g(e,t){var r=n[e];if(r)for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)}function h(e){return n[e]||[]}function w(t){return f[t]=f[t]||e(_,t)}function m(e,t){var r=k();_.aborted||(0,o.D)(e,(function(e,n){t=t||"feature",c[n]=t,t in r||(r[t]=[])}))}function y(e){return!!k()[c[e]]}function k(){return _.backlog}}(void 0,"globalEE"),c.ee=s)},3195:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(2071).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4539:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(3195);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3585:(e,t,r)=>{"use strict";r.d(t,{bP:()=>c,iz:()=>s,m$:()=>a});var n=r(8438),i=!1;try{var o=Object.defineProperty({},"passive",{get:function(){i=!0}});n.ZP?.addEventListener("testPassive",null,o),n.ZP?.removeEventListener("testPassive",null,o)}catch(e){}function a(e){return i?{passive:!0,capture:!!e}:!!e}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];window.addEventListener(e,t,a(r))}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];document.addEventListener(e,t,a(r))}},2141:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>i,ky:()=>o});var n=r(8438);function i(){var e=null,t=0,r=n.ZP?.crypto||n.ZP?.msCrypto;function i(){return e?15&e[t++]:16*Math.random()|0}r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,a="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",c="",s=0;s<a.length;s++)c+="x"===(o=a[s])?i().toString(16):"y"===o?(o=3&i()|8).toString(16):o;return c}function o(e){var t=null,r=0,n=self.crypto||self.msCrypto;n&&n.getRandomValues&&Uint8Array&&(t=n.getRandomValues(new Uint8Array(31)));for(var i=[],o=0;o<e;o++)i.push(a().toString(16));return i.join("");function a(){return t?15&t[r++]:16*Math.random()|0}}},9206:(e,t,r)=>{"use strict";r.d(t,{nb:()=>s,os:()=>u,yf:()=>c,zO:()=>a});var n=r(1209),i=(new Date).getTime(),o=i;function a(){return n.G&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-o}function c(){return i}function s(e){o=e}function u(){return o}},1209:(e,t,r)=>{"use strict";r.d(t,{G:()=>n});const n=void 0!==r(8438).ZP?.performance?.timing?.navigationStart},745:(e,t,r)=>{"use strict";r.d(t,{s:()=>s,v:()=>u});var n=r(7036),i=r(1719),o=r(9206),a=r(1209),c=r(8438);let s=!0;function u(e){var t=function(){if(i.I&&i.I<9)return;if(a.G)return s=!1,c.ZP?.performance?.timing?.navigationStart}();t&&((0,n.B)(e,"starttime",t),(0,o.nb)(t))}},7036:(e,t,r)=>{"use strict";r.d(t,{B:()=>o,L:()=>a});var n=r(9206),i={};function o(e,t,r){void 0===r&&(r=(0,n.zO)()+(0,n.os)()),i[e]=i[e]||{},i[e][t]=r}function a(e,t,r,n){const o=e.sharedContext.agentIdentifier;var a=i[o]?.[r],c=i[o]?.[n];void 0!==a&&void 0!==c&&e.store("measures",t,{value:c-a})}},8547:(e,t,r)=>{"use strict";r.d(t,{T:()=>i});var n=r(8438);const i={isFileProtocol:function(){let e=Boolean("file:"===(0,n.lW)()?.location?.protocol);e&&(i.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},9011:(e,t,r)=>{"use strict";r.d(t,{K:()=>o});var n=r(5970);const i=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function o(e){const t={};return i.forEach((r=>{t[r]=function(e,t){return!0!==(0,n.OP)(t).disabled&&!1!==(0,n.Mt)(t,`${e}.enabled`)}(r,e)})),t}},8025:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(2071);class i{constructor(e,t){let r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.externalFeatures=r,this.blocked=!1}}},9010:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},8438:(e,t,r)=>{"use strict";r.d(t,{ZP:()=>a,il:()=>n,lW:()=>c,v6:()=>i});const n=Boolean("undefined"!=typeof window&&window.document),i=Boolean("undefined"!=typeof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator);let o=(()=>{if(n)return window;if(i){if("undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope)return globalThis;if(self instanceof WorkerGlobalScope)return self}throw new Error("New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like `self` and `window`.")})();const a=o;function c(){return o}},9599:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t){var r=[],i="",o=0;for(i in e)n.call(e,i)&&(r[o]=t(i,e[i]),o+=1);return r}},248:(e,t,r)=>{"use strict";r.d(t,{$c:()=>s,Ng:()=>u,RR:()=>c});var n=r(5970),i=r(1925),o=r(8547),a={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"};class c extends i.w{constructor(e){super(e)}shouldObfuscate(){return s(this.sharedContext.agentIdentifier).length>0}obfuscateString(e){if(!e||"string"!=typeof e)return e;for(var t=s(this.sharedContext.agentIdentifier),r=e,n=0;n<t.length;n++){var i=t[n].regex,o=t[n].replacement||"*";r=r.replace(i,o)}return r}}function s(e){var t=[],r=(0,n.Mt)(e,"obfuscate")||[];return t=t.concat(r),o.T.isFileProtocol()&&t.push(a),t}function u(e){for(var t=!1,r=!1,n=0;n<e.length;n++){"regex"in e[n]?"string"!=typeof e[n].regex&&e[n].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),r=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),r=!0);var i=e[n].replacement;i&&"string"!=typeof i&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),t=!0)}return!t&&!r}},4580:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>u,Qy:()=>s,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>c});var n=r(9206),i=r(8438);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i.ZP?.NREUM||(i.ZP.NREUM={}),void 0===i.ZP?.newrelic&&(i.ZP.newrelic=i.ZP.NREUM),i.ZP.NREUM}function c(){let e=a();if(!e.o){var t=self,r=t.XMLHttpRequest;e.o={ST:setTimeout,SI:t.setImmediate,CT:clearTimeout,XHR:r,REQ:t.Request,EV:t.Event,PR:t.Promise,MO:t.MutationObserver,FETCH:t.fetch}}return e}function s(e,t,r){let i=a();const o=i.initializedAgents||{},c=o[e]||{};return Object.keys(c).length||(c.initializedAt={ms:(0,n.zO)(),date:new Date}),i.initializedAgents={...o,[e]:{...c,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),c(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},584:(e,t,r)=>{"use strict";r.d(t,{N:()=>i,e:()=>o});var n=r(3585);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return void(0,n.iz)("visibilitychange",r);function r(){if(t){if("hidden"!=document.visibilityState)return;e()}e(document.visibilityState)}}function o(){return"hidden"===document.visibilityState?-1:1/0}},8539:e=>{e.exports=function(e,t,r){t||(t=0),void 0===r&&(r=e?e.length:0);for(var n=-1,i=r-t||0,o=Array(i<0?0:i);++n<i;)o[n]=e[t+n];return o}}},__webpack_module_cache__={},inProgress,dataWebpackPrefix;function __webpack_require__(e){var t=__webpack_module_cache__[e];if(void 0!==t)return t.exports;var r=__webpack_module_cache__[e]={exports:{}};return __webpack_modules__[e](r,r.exports,__webpack_require__),r.exports}__webpack_require__.m=__webpack_modules__,__webpack_require__.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return __webpack_require__.d(t,{a:t}),t},__webpack_require__.d=(e,t)=>{for(var r in t)__webpack_require__.o(t,r)&&!__webpack_require__.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},__webpack_require__.f={},__webpack_require__.e=e=>Promise.all(Object.keys(__webpack_require__.f).reduce(((t,r)=>(__webpack_require__.f[r](e,t),t)),[])),__webpack_require__.u=e=>e+"."+__webpack_require__.h().slice(0,8)+"-1222.js",__webpack_require__.h=()=>"95d4308d836c4fa71ea6",__webpack_require__.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),inProgress={},dataWebpackPrefix="NRBA:",__webpack_require__.l=(e,t,r,n)=>{if(inProgress[e])inProgress[e].push(t);else{var i,o;if(void 0!==r)for(var a=document.getElementsByTagName("script"),c=0;c<a.length;c++){var s=a[c];if(s.getAttribute("src")==e||s.getAttribute("data-webpack")==dataWebpackPrefix+r){i=s;break}}i||(o=!0,(i=document.createElement("script")).charset="utf-8",i.timeout=120,__webpack_require__.nc&&i.setAttribute("nonce",__webpack_require__.nc),i.setAttribute("data-webpack",dataWebpackPrefix+r),i.src=e),inProgress[e]=[t];var u=(t,r)=>{i.onerror=i.onload=null,clearTimeout(d);var n=inProgress[e];if(delete inProgress[e],i.parentNode&&i.parentNode.removeChild(i),n&&n.forEach((e=>e(r))),t)return t(r)},d=setTimeout(u.bind(null,void 0,{type:"timeout",target:i}),12e4);i.onerror=u.bind(null,i.onerror),i.onload=u.bind(null,i.onload),o&&document.head.appendChild(i)}},__webpack_require__.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},__webpack_require__.p="https://js-agent.newrelic.com/",(()=>{var e={783:0,519:0};__webpack_require__.f.j=(t,r)=>{var n=__webpack_require__.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var i=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=i);var o=__webpack_require__.p+__webpack_require__.u(t),a=new Error;__webpack_require__.l(o,(r=>{if(__webpack_require__.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var i=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed.\n("+i+": "+o+")",a.name="ChunkLoadError",a.type=i,a.request=o,n[1](a)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,i,[o,a,c]=r,s=0;if(o.some((t=>0!==e[t]))){for(n in a)__webpack_require__.o(a,n)&&(__webpack_require__.m[n]=a[n]);if(c)c(__webpack_require__)}for(t&&t(r);s<o.length;s++)i=o[s],__webpack_require__.o(e,i)&&e[i]&&e[i][0](),e[i]=0},r=window.webpackChunkNRBA=window.webpackChunkNRBA||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var __webpack_exports__={};(()=>{"use strict";__webpack_require__.r(__webpack_exports__);var e=__webpack_require__(507),t=__webpack_require__(2687),r=__webpack_require__(3585);function n(e){if(!document||"complete"===document.readyState)return e()||!0}function i(e){n(e)||(0,r.bP)("load",e)}function o(e){n(e)||(0,r.iz)("DOMContentLoaded",e)}var a=__webpack_require__(8438),c=__webpack_require__(2071);let s=0;function u(e){(async()=>{if(!s++)try{const{aggregator:t}=await __webpack_require__.e(859).then(__webpack_require__.bind(__webpack_require__,7859));await t(e)}catch(e){console.error("Failed to successfully load all aggregators. Aborting...\n",e),c.ee.abort()}})()}var d=__webpack_require__(8539),l=__webpack_require__.n(d),f=__webpack_require__(4580),_=__webpack_require__(5970),p=__webpack_require__(3195),v=__webpack_require__(9599),b=__webpack_require__(9206);let g=!1;var h=__webpack_require__(7036),w=__webpack_require__(745),m=__webpack_require__(8025);class y extends m.W{constructor(e){super(e),a.il&&((0,w.v)(e),(0,h.B)(e,"firstbyte",(0,b.yf)()),i((()=>this.measureWindowLoaded())),o((()=>this.measureDomContentLoaded())))}measureWindowLoaded(){var e=(0,b.zO)();(0,h.B)(this.agentIdentifier,"onload",e+(0,b.os)()),(0,p.p)("timing",["load",e],void 0,void 0,this.ee)}measureDomContentLoaded(){(0,h.B)(this.agentIdentifier,"domContent",(0,b.zO)()+(0,b.os)())}}var k=__webpack_require__(584);class P extends m.W{constructor(e){var t;if(super(e),t=this,this.isEnabled()&&a.il){if(this.pageHiddenTime=(0,k.e)(),this.performanceObserver,this.lcpPerformanceObserver,this.clsPerformanceObserver,this.fiRecorded=!1,"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){this.performanceObserver=new PerformanceObserver((function(){return t.perfObserver(...arguments)}));try{this.performanceObserver.observe({entryTypes:["paint"]})}catch(e){}this.lcpPerformanceObserver=new PerformanceObserver((function(){return t.lcpObserver(...arguments)}));try{this.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(e){}this.clsPerformanceObserver=new PerformanceObserver((function(){return t.clsObserver(...arguments)}));try{this.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(e){}}this.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((e=>{(0,r.iz)(e,(function(){return t.captureInteraction(...arguments)}))})),(0,k.N)((()=>{this.pageHiddenTime=(0,b.zO)(),(0,p.p)("docHidden",[this.pageHiddenTime],void 0,void 0,this.ee)}),!0),(0,r.bP)("pagehide",(()=>(0,p.p)("winPagehide",[(0,b.zO)()],void 0,void 0,this.ee)))}}isEnabled(){return!1!==(0,_.Mt)(this.agentIdentifier,"page_view_timing.enabled")}perfObserver(e,t){e.getEntries().forEach((e=>{"first-paint"===e.name?(0,p.p)("timing",["fp",Math.floor(e.startTime)],void 0,void 0,this.ee):"first-contentful-paint"===e.name&&(0,p.p)("timing",["fcp",Math.floor(e.startTime)],void 0,void 0,this.ee)}))}lcpObserver(e,t){var r=e.getEntries();if(r.length>0){var n=r[r.length-1];if(this.pageHiddenTime<n.startTime)return;var i=[n],o=this.addConnectionAttributes({});o&&i.push(o),(0,p.p)("lcp",i,void 0,void 0,this.ee)}}clsObserver(e){e.getEntries().forEach((e=>{e.hadRecentInput||(0,p.p)("cls",[e],void 0,void 0,this.ee)}))}addConnectionAttributes(e){var t=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(t)return t.type&&(e["net-type"]=t.type),t.effectiveType&&(e["net-etype"]=t.effectiveType),t.rtt&&(e["net-rtt"]=t.rtt),t.downlink&&(e["net-dlink"]=t.downlink),e}captureInteraction(e){if(e instanceof _.Yu.EV&&!this.fiRecorded){var t=Math.round(e.timeStamp),r={type:e.type};this.addConnectionAttributes(r),t<=(0,b.zO)()?r.fid=(0,b.zO)()-t:t>(0,b.os)()&&t<=Date.now()?(t-=(0,b.os)(),r.fid=(0,b.zO)()-t):t=(0,b.zO)(),this.fiRecorded=!0,(0,p.p)("timing",["fi",t,r],void 0,void 0,this.ee)}}}var x=__webpack_require__(4539),E="React",S="Angular",O="AngularJS",A="Backbone",q="Ember",C="Vue",T="Meteor",j="Zepto",I="Jquery";function R(){if(!a.il)return[];var e=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var e=document.querySelectorAll("body > div"),t=0;t<e.length;t++)if(Object.keys(e[t]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(e){return!1}})()&&e.push(E),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(e){return!1}}()&&e.push(O),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(e){return!1}}()&&e.push(S),window.Backbone&&e.push(A),window.Ember&&e.push(q),window.Vue&&e.push(C),window.Meteor&&e.push(T),window.Zepto&&e.push(j),window.jQuery&&e.push(I)}catch(e){}return e}var N=__webpack_require__(8547),M=__webpack_require__(248),Z=__webpack_require__(8873);const B=Boolean(a.ZP?.Worker),D=Boolean(a.ZP?.SharedWorker),W=Boolean(a.ZP?.navigator?.serviceWorker);let F,z,G;class L extends m.W{constructor(e){var t;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};super(e),t=this,this.PfFeatStatusEnum=r,this.singleChecks(),this.eachSessionChecks(),(0,x.X)("record-supportability",(function(){return t.recordSupportability(...arguments)}),void 0,this.ee),(0,x.X)("record-custom",(function(){return t.recordCustom(...arguments)}),void 0,this.ee)}recordSupportability(e,t){var r=["sm",e,{name:e},t];return(0,p.p)("storeMetric",r,null,void 0,this.ee),r}recordCustom(e,t){var r=["cm",e,{name:e},t];return(0,p.p)("storeEventMetrics",r,null,void 0,this.ee),r}singleChecks(){this.recordSupportability(`Generic/Version/${Z.q}/Detected`);const{loaderType:e}=(0,_.OP)(this.agentIdentifier);e&&this.recordSupportability(`Generic/LoaderType/${e}/Detected`),a.il&&o((()=>{R().forEach((e=>{this.recordSupportability("Framework/"+e+"/Detected")}))})),N.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),N.T.supportabilityMetricSent=!0);const t=(0,M.$c)(this.agentIdentifier);t.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),t.length>0&&!(0,M.Ng)(t)&&this.recordSupportability("Generic/Obfuscate/Invalid"),a.il&&this.reportPolyfillsNeeded(),function(e){if(!F){if(B){F=Worker;try{a.ZP.Worker=r(F,"Dedicated")}catch(e){o(e,"Dedicated")}if(D){z=SharedWorker;try{a.ZP.SharedWorker=r(z,"Shared")}catch(e){o(e,"Shared")}}else n("Shared");if(W){G=navigator.serviceWorker.register;try{a.ZP.navigator.serviceWorker.register=(t=G,function(){for(var e=arguments.length,r=new Array(e),n=0;n<e;n++)r[n]=arguments[n];return i("Service",r[1]?.type),t.apply(navigator.serviceWorker,r)})}catch(e){o(e,"Service")}}else n("Service");var t;return}n("All")}function r(e,t){return new Proxy(e,{construct:(e,r)=>(i(t,r[1]?.type),new e(...r))})}function n(t){a.v6||e(`Workers/${t}/Unavailable`)}function i(t,r){e("module"===r?`Workers/${t}/Module`:`Workers/${t}/Classic`)}function o(t,r){e(`Workers/${r}/SM/Unsupported`),console.warn(`NR Agent: Unable to capture ${r} workers.`,t)}}(this.recordSupportability.bind(this))}reportPolyfillsNeeded(){this.recordSupportability(`Generic/Polyfill/Promise/${this.PfFeatStatusEnum.PROMISE}`),this.recordSupportability(`Generic/Polyfill/ArrayIncludes/${this.PfFeatStatusEnum.ARRAY_INCLUDES}`),this.recordSupportability(`Generic/Polyfill/ObjectAssign/${this.PfFeatStatusEnum.OBJECT_ASSIGN}`),this.recordSupportability(`Generic/Polyfill/ObjectEntries/${this.PfFeatStatusEnum.OBJECT_ENTRIES}`)}eachSessionChecks(){a.il&&(0,r.bP)("pageshow",(e=>{e.persisted&&this.recordCustom("Custom/BFCache/PageRestored")}))}}var U=__webpack_require__(9011);const $=(0,e.n)(),H="lite";try{!function(e){if(g)return;const r=(0,f.gG)();a.v6&&(r.info.jsAttributes={...r.info.jsAttributes,isWorker:!0});try{(0,_.CX)(t.Z,r.info),(0,_.Dg)(t.Z,r.init),(0,_.GE)(t.Z,r.loader_config),(0,_.sU)(t.Z,{loaderType:e}),function(e){var t=(0,f.fP)(),r=c.ee.get(e),n=r.get("tracer"),i="api-",o=i+"ixn-";function a(){}(0,v.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(e,r){t[r]=u(i,r,!0,"api")})),t.addPageAction=u(i,"addPageAction",!0),t.setCurrentRouteName=u(i,"routeName",!0),t.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,_.OP)(e).customTransaction=(r||"http://custom.transaction")+t,u(i,"setPageViewName",!0,"api")()},t.setCustomAttribute=function(t,r){const n=(0,_.C5)(e);return(0,_.CX)(e,{...n,jsAttributes:{...n.jsAttributes,[t]:r}}),u(i,"setCustomAttribute",!0,"api")()},t.interaction=function(){return(new a).get()};var s=a.prototype={createTracer:function(e,t){var i={},a=this,c="function"==typeof t;return(0,p.p)(o+"tracer",[(0,b.zO)(),e,i],a,void 0,r),function(){if(n.emit((c?"":"no-")+"fn-start",[(0,b.zO)(),a,c],i),c)try{return t.apply(this,arguments)}catch(e){throw n.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],i),e}finally{n.emit("fn-end",[(0,b.zO)()],i)}}}};function u(e,t,n,i){return function(){return(0,p.p)("record-supportability",["API/"+t+"/called"],void 0,void 0,r),(0,p.p)(e+t,[(0,b.zO)()].concat(l()(arguments)),n?null:this,i,r),n?void 0:this}}(0,v.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(e,t){s[t]=u(o,t)})),t.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,p.p)("record-supportability",["API/noticeError/called"],void 0,void 0,r),(0,p.p)("err",[e,(0,b.zO)(),!1,t],void 0,void 0,r)}}(t.Z),g=!0}catch(e){}}(H);const e=(0,U.K)(t.Z);e.page_view_event&&new y(t.Z),e.page_view_timing&&new P(t.Z),e.metrics&&new L(t.Z,$),function(e,t){let r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:1e3;t?setTimeout((()=>u(e)),r):a.il?i((()=>u(e))):u(e)}(H)}catch(e){a.ZP?.newrelic?.ee?.abort&&a.ZP.newrelic.ee.abort()}})(),window.NRBA=__webpack_exports__})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="keywords"  content="Adobe Portfolio,handmade,ILLUSTRATION,linedrawing,Mural,office mural,painting,wallpainting" />
+      <meta name="description"  content="Mural" />
+      <meta name="twitter:card"  content="summary_large_image" />
+      <meta name="twitter:site"  content="@AdobePortfolio" />
+      <meta  property="og:title" content="Wallnuts Murals - Oopen" />
+      <meta  property="og:description" content="Mural" />
+      <meta  property="og:image" content="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/2cc2de77-86dd-4292-a5e7-b6f7794d02e9_car_1x1.jpg?h=3bc621e39103ffadc634ee9ef950add7" />
+        <link rel="icon" href="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/85f5298b-2f09-4691-a174-b95f93e38adc_carw_1x1x32.ico?h=e2997a70b35050398eba617e2c107516" />
+      <link rel="stylesheet" href="/dist/css/main.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/08365e1bc7f58d224d16983ccce816f51661947796.css?h=a56cd09d0cce305604b85b65d37c93da" type="text/css" />
+    <link rel="canonical" href="https://wallnutsmurals.com/oopen" />
+      <title>Wallnuts Murals - Oopen</title>
+    <script type="text/javascript" src="//use.typekit.net/ik/Ye0zcYt2EHm13UKdeYqeKvxNzz9ri9dX4mZkQGp7l16fezXffHYEBsJzwD9oFDIDWDbaZebXjD9XZeJawRqt5eZ8FDZcwDFq5QwDFD8RFhJa5AJUFQqkwD6-86I7OcuoSeNkieZzde8zOcFzdP37O1gkdDJlic88ikolpWgzS1scdhUTdkoRdhXCHKoajAUCd1mXShuuScBCSkoRdhXCdW83da4XZcNC-Av0jhNlOYgkdDJlic88ikolpWgzS1scdhUTdkoRdhXCihBCdeouiYFliW4ydYw0jhNlOYiaikoajAUCd1mXShuuScBCSkoRdhXKge4K-hCKgeF1-Yb7f6R6z3IbMg6FJMJ7f6Rqz3IbMg65JMJ7f6Rcz3IbMg6gJMJ7f6RLz3IbMg62JMJ7f6RRz3IbMg6IJMJ7f6Ryz3IbMg6BJMJ7f6Rdz3IbMg6YJMJ7f6Rlz3IbMs6FJMJ7f6Rzz3IbMs65JMJ7f6RCz3IbMs62JMJ7f6R0z3IbMs6IJMJ7f6Rjz3IbMs6BJMJ7f6RTz3IbMs6YJMHbMSRUUVXB.js?cb=3d952059082ae6ff7df21dae137e18c22c96e17f" async onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn('Typekit not loaded.');
+    }
+    "></script>
+</head>
+  <body class="transition-enabled">  <div class='page-background-video page-background-video-with-panel'>
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="close-responsive-click-area js-close-responsive-nav">
+        <div class="close-responsive-button"></div>
+      </div>
+          <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="/projects" >Projects</a></div>
+      <div class="page-title">
+        <a href="/about" >About</a>
+      </div>
+      <div class="page-title">
+        <a href="/contact" >Contact</a>
+      </div>
+          </nav>
+        <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+                  <li>
+                    <a href="http://instagram.com/wallnutsmurals" target="_blank">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                      <g>
+                        <path d="M15,5.4c2.1,0,2.4,0,3.2,0c0.8,0,1.2,0.2,1.5,0.3c0.4,0.1,0.6,0.3,0.9,0.6c0.3,0.3,0.5,0.5,0.6,0.9
+                          c0.1,0.3,0.2,0.7,0.3,1.5c0,0.8,0,1.1,0,3.2s0,2.4,0,3.2c0,0.8-0.2,1.2-0.3,1.5c-0.1,0.4-0.3,0.6-0.6,0.9c-0.3,0.3-0.5,0.5-0.9,0.6
+                          c-0.3,0.1-0.7,0.2-1.5,0.3c-0.8,0-1.1,0-3.2,0s-2.4,0-3.2,0c-0.8,0-1.2-0.2-1.5-0.3c-0.4-0.1-0.6-0.3-0.9-0.6
+                          c-0.3-0.3-0.5-0.5-0.6-0.9c-0.1-0.3-0.2-0.7-0.3-1.5c0-0.8,0-1.1,0-3.2s0-2.4,0-3.2c0-0.8,0.2-1.2,0.3-1.5c0.1-0.4,0.3-0.6,0.6-0.9
+                          c0.3-0.3,0.5-0.5,0.9-0.6c0.3-0.1,0.7-0.2,1.5-0.3C12.6,5.4,12.9,5.4,15,5.4 M15,4c-2.2,0-2.4,0-3.3,0c-0.9,0-1.4,0.2-1.9,0.4
+                          c-0.5,0.2-1,0.5-1.4,0.9C7.9,5.8,7.6,6.2,7.4,6.8C7.2,7.3,7.1,7.9,7,8.7C7,9.6,7,9.8,7,12s0,2.4,0,3.3c0,0.9,0.2,1.4,0.4,1.9
+                          c0.2,0.5,0.5,1,0.9,1.4c0.4,0.4,0.9,0.7,1.4,0.9c0.5,0.2,1.1,0.3,1.9,0.4c0.9,0,1.1,0,3.3,0s2.4,0,3.3,0c0.9,0,1.4-0.2,1.9-0.4
+                          c0.5-0.2,1-0.5,1.4-0.9c0.4-0.4,0.7-0.9,0.9-1.4c0.2-0.5,0.3-1.1,0.4-1.9c0-0.9,0-1.1,0-3.3s0-2.4,0-3.3c0-0.9-0.2-1.4-0.4-1.9
+                          c-0.2-0.5-0.5-1-0.9-1.4c-0.4-0.4-0.9-0.7-1.4-0.9c-0.5-0.2-1.1-0.3-1.9-0.4C17.4,4,17.2,4,15,4L15,4L15,4z"/>
+                        <path d="M15,7.9c-2.3,0-4.1,1.8-4.1,4.1s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S17.3,7.9,15,7.9L15,7.9z M15,14.7c-1.5,0-2.7-1.2-2.7-2.7
+                          c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7C17.7,13.5,16.5,14.7,15,14.7L15,14.7z"/>
+                        <path d="M20.2,7.7c0,0.5-0.4,1-1,1s-1-0.4-1-1s0.4-1,1-1S20.2,7.2,20.2,7.7L20.2,7.7z"/>
+                      </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dribbble.com/Wallnuts-Murals" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 30 24" xml:space="preserve" class="icon"><path d="M15 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c4.41 0 8 3.6 8 8S19.41 20 15 20L15 20z M21.75 13.1 c-0.23-0.07-2.12-0.64-4.26-0.29c0.89 2.5 1.3 4.5 1.3 4.87C20.35 16.6 21.4 15 21.8 13.1L21.75 13.1z M17.67 18.3 c-0.1-0.6-0.5-2.69-1.46-5.18c-0.02 0-0.03 0.01-0.05 0.01c-3.85 1.34-5.24 4.02-5.36 4.27c1.16 0.9 2.6 1.4 4.2 1.4 C15.95 18.8 16.9 18.6 17.7 18.3L17.67 18.3z M9.92 16.58c0.15-0.27 2.03-3.37 5.55-4.51c0.09-0.03 0.18-0.06 0.27-0.08 c-0.17-0.39-0.36-0.78-0.55-1.16c-3.41 1.02-6.72 0.98-7.02 0.97c0 0.1 0 0.1 0 0.21C8.17 13.8 8.8 15.4 9.9 16.58L9.92 16.6 z M8.31 10.61c0.31 0 3.1 0 6.32-0.83c-1.13-2.01-2.35-3.7-2.53-3.95C10.18 6.7 8.8 8.5 8.3 10.61L8.31 10.61z M13.4 5.4 c0.19 0.2 1.4 1.9 2.5 4c2.43-0.91 3.46-2.29 3.58-2.47C18.32 5.8 16.7 5.2 15 5.18C14.45 5.2 13.9 5.2 13.4 5.4 L13.4 5.37z M20.29 7.69c-0.14 0.19-1.29 1.66-3.82 2.69c0.16 0.3 0.3 0.7 0.5 0.99c0.05 0.1 0.1 0.2 0.1 0.3 c2.27-0.29 4.5 0.2 4.8 0.22C21.82 10.3 21.2 8.8 20.3 7.69L20.29 7.69z"/></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://vimeo.com/wallnutsmurals" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" viewBox="0 0 30 24" xml:space="preserve" class="icon"><path d="M23.99 7.7c-0.08 1.8-1.3 4.27-3.67 7.4c-2.45 3.27-4.52 4.9-6.21 4.9c-1.05 0-1.94-0.99-2.66-2.99 c-0.48-1.82-0.97-3.65-1.45-5.48C9.46 9.6 8.9 8.6 8.3 8.55c-0.13 0-0.61 0.29-1.41 0.87L6 8.3C6.89 7.5 7.8 6.7 8.6 5.9 c1.18-1.05 2.07-1.61 2.67-1.66c1.4-0.14 2.3 0.8 2.6 2.95c0.35 2.3 0.6 3.7 0.7 4.24c0.4 1.9 0.8 2.8 1.3 2.8 c0.38 0 0.94-0.61 1.7-1.84c0.75-1.22 1.16-2.16 1.21-2.79c0.11-1.06-0.3-1.59-1.21-1.59c-0.43 0-0.88 0.1-1.33 0.3 c0.88-2.98 2.58-4.43 5.07-4.34C23.23 4.1 24.1 5.3 24 7.7z"/></svg>
+                    </a>
+                  </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+    <header class="site-header js-site-header  js-fixed-nav" data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+        <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="/projects" >Projects</a></div>
+      <div class="page-title">
+        <a href="/about" >About</a>
+      </div>
+      <div class="page-title">
+        <a href="/contact" >Contact</a>
+      </div>
+        </nav>
+        <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+          <div class="logo e2e-site-logo-text logo-image has-rollover ">
+    <a href="/projects" class="image-normal image-link">
+      <img src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/f1880aab-8b02-4039-9ae7-416b54658a85_rwc_0x0x800x400x4096.png?h=d1c1a4d9f330f5c53fee088fb5f71bd9" alt="Wallnuts Murals">
+    </a>
+    <a href="/projects" class="image-rollover image-link">
+      <img src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/3a1f6267-7288-4716-bb56-87e11b43d3a3_rwc_0x0x800x400x4096.png?h=4b2a1c4af9fcdf9329a1b78dcd5a4695" alt="Wallnuts Murals">
+    </a>
+          </div>
+        </div>
+        <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+                  <li>
+                    <a href="http://instagram.com/wallnutsmurals" target="_blank">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                      <g>
+                        <path d="M15,5.4c2.1,0,2.4,0,3.2,0c0.8,0,1.2,0.2,1.5,0.3c0.4,0.1,0.6,0.3,0.9,0.6c0.3,0.3,0.5,0.5,0.6,0.9
+                          c0.1,0.3,0.2,0.7,0.3,1.5c0,0.8,0,1.1,0,3.2s0,2.4,0,3.2c0,0.8-0.2,1.2-0.3,1.5c-0.1,0.4-0.3,0.6-0.6,0.9c-0.3,0.3-0.5,0.5-0.9,0.6
+                          c-0.3,0.1-0.7,0.2-1.5,0.3c-0.8,0-1.1,0-3.2,0s-2.4,0-3.2,0c-0.8,0-1.2-0.2-1.5-0.3c-0.4-0.1-0.6-0.3-0.9-0.6
+                          c-0.3-0.3-0.5-0.5-0.6-0.9c-0.1-0.3-0.2-0.7-0.3-1.5c0-0.8,0-1.1,0-3.2s0-2.4,0-3.2c0-0.8,0.2-1.2,0.3-1.5c0.1-0.4,0.3-0.6,0.6-0.9
+                          c0.3-0.3,0.5-0.5,0.9-0.6c0.3-0.1,0.7-0.2,1.5-0.3C12.6,5.4,12.9,5.4,15,5.4 M15,4c-2.2,0-2.4,0-3.3,0c-0.9,0-1.4,0.2-1.9,0.4
+                          c-0.5,0.2-1,0.5-1.4,0.9C7.9,5.8,7.6,6.2,7.4,6.8C7.2,7.3,7.1,7.9,7,8.7C7,9.6,7,9.8,7,12s0,2.4,0,3.3c0,0.9,0.2,1.4,0.4,1.9
+                          c0.2,0.5,0.5,1,0.9,1.4c0.4,0.4,0.9,0.7,1.4,0.9c0.5,0.2,1.1,0.3,1.9,0.4c0.9,0,1.1,0,3.3,0s2.4,0,3.3,0c0.9,0,1.4-0.2,1.9-0.4
+                          c0.5-0.2,1-0.5,1.4-0.9c0.4-0.4,0.7-0.9,0.9-1.4c0.2-0.5,0.3-1.1,0.4-1.9c0-0.9,0-1.1,0-3.3s0-2.4,0-3.3c0-0.9-0.2-1.4-0.4-1.9
+                          c-0.2-0.5-0.5-1-0.9-1.4c-0.4-0.4-0.9-0.7-1.4-0.9c-0.5-0.2-1.1-0.3-1.9-0.4C17.4,4,17.2,4,15,4L15,4L15,4z"/>
+                        <path d="M15,7.9c-2.3,0-4.1,1.8-4.1,4.1s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S17.3,7.9,15,7.9L15,7.9z M15,14.7c-1.5,0-2.7-1.2-2.7-2.7
+                          c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7C17.7,13.5,16.5,14.7,15,14.7L15,14.7z"/>
+                        <path d="M20.2,7.7c0,0.5-0.4,1-1,1s-1-0.4-1-1s0.4-1,1-1S20.2,7.2,20.2,7.7L20.2,7.7z"/>
+                      </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dribbble.com/Wallnuts-Murals" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 30 24" xml:space="preserve" class="icon"><path d="M15 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c4.41 0 8 3.6 8 8S19.41 20 15 20L15 20z M21.75 13.1 c-0.23-0.07-2.12-0.64-4.26-0.29c0.89 2.5 1.3 4.5 1.3 4.87C20.35 16.6 21.4 15 21.8 13.1L21.75 13.1z M17.67 18.3 c-0.1-0.6-0.5-2.69-1.46-5.18c-0.02 0-0.03 0.01-0.05 0.01c-3.85 1.34-5.24 4.02-5.36 4.27c1.16 0.9 2.6 1.4 4.2 1.4 C15.95 18.8 16.9 18.6 17.7 18.3L17.67 18.3z M9.92 16.58c0.15-0.27 2.03-3.37 5.55-4.51c0.09-0.03 0.18-0.06 0.27-0.08 c-0.17-0.39-0.36-0.78-0.55-1.16c-3.41 1.02-6.72 0.98-7.02 0.97c0 0.1 0 0.1 0 0.21C8.17 13.8 8.8 15.4 9.9 16.58L9.92 16.6 z M8.31 10.61c0.31 0 3.1 0 6.32-0.83c-1.13-2.01-2.35-3.7-2.53-3.95C10.18 6.7 8.8 8.5 8.3 10.61L8.31 10.61z M13.4 5.4 c0.19 0.2 1.4 1.9 2.5 4c2.43-0.91 3.46-2.29 3.58-2.47C18.32 5.8 16.7 5.2 15 5.18C14.45 5.2 13.9 5.2 13.4 5.4 L13.4 5.37z M20.29 7.69c-0.14 0.19-1.29 1.66-3.82 2.69c0.16 0.3 0.3 0.7 0.5 0.99c0.05 0.1 0.1 0.2 0.1 0.3 c2.27-0.29 4.5 0.2 4.8 0.22C21.82 10.3 21.2 8.8 20.3 7.69L20.29 7.69z"/></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://vimeo.com/wallnutsmurals" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" viewBox="0 0 30 24" xml:space="preserve" class="icon"><path d="M23.99 7.7c-0.08 1.8-1.3 4.27-3.67 7.4c-2.45 3.27-4.52 4.9-6.21 4.9c-1.05 0-1.94-0.99-2.66-2.99 c-0.48-1.82-0.97-3.65-1.45-5.48C9.46 9.6 8.9 8.6 8.3 8.55c-0.13 0-0.61 0.29-1.41 0.87L6 8.3C6.89 7.5 7.8 6.7 8.6 5.9 c1.18-1.05 2.07-1.61 2.67-1.66c1.4-0.14 2.3 0.8 2.6 2.95c0.35 2.3 0.6 3.7 0.7 4.24c0.4 1.9 0.8 2.8 1.3 2.8 c0.38 0 0.94-0.61 1.7-1.84c0.75-1.22 1.16-2.16 1.21-2.79c0.11-1.06-0.3-1.59-1.21-1.59c-0.43 0-0.88 0.1-1.33 0.3 c0.88-2.98 2.58-4.43 5.07-4.34C23.23 4.1 24.1 5.3 24 7.7z"/></svg>
+                    </a>
+                  </li>
+          </ul>
+        </div>
+        <div class="hamburger-click-area js-hamburger">
+          <div class="hamburger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+  <div class="site-wrap cfix js-site-wrap">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+        <main>
+  <div class="page-container" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+        <header class="page-header content" data-context="pages" data-identity="id:p630f497704989b05b5fd3143539322349dbc281962bcf9dac2686" data-hover-hint="pageHeader" data-hover-hint-id="p630f497704989b05b5fd3143539322349dbc281962bcf9dac2686">
+            <h1 class="title preserve-whitespace e2e-site-logo-text">Oopen</h1>
+            
+        </header>
+      <div class="page-content js-page-content" data-context="pages" data-identity="id:p630f497704989b05b5fd3143539322349dbc281962bcf9dac2686">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align-center js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div style="text-align:center;" class="texteditor-inline-lineheight">Our first <a href="https://wallnutsmurals.com/" target="_blank"><span class="underline">Wallnuts</span></a> stairway mural! <a href="https://entdesign.nl/" target="_blank">Ent Design</a> was doing a complete interior design for the new Utrecht office of <a href="https://about.oopen.co/" target="_blank">Oopen</a>, and she asked us to help out with the stairway. The colours are based on the interior palette and the illustrations are inspired by all the different types of companies Oopen works with. </div><div style="text-align:center;" class="texteditor-inline-lineheight"><br></div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module media_collection project-module-media_collection" data-id="m630f4976d503aacce22eceec8e3ac08e3ffedcfb542d5761d2fef"  style="padding-top: px;
+padding-bottom: px;
+">
+  <div class="grid--main js-grid-main" data-grid-max-images="
+  ">
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="146.23172103487" style="width:146.23172103487px; flex-grow:146.23172103487;" data-width="1920" data-height="3413">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c65f297a-d986-4c9a-9e84-6dfa96215f92_rw_1920.jpg?h=8baa34c9d52a25608f9d236e3bd4adc9" srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c65f297a-d986-4c9a-9e84-6dfa96215f92_rw_600.jpg?h=ec5cddc324bc5d2f31d1277d5c2c80b1 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c65f297a-d986-4c9a-9e84-6dfa96215f92_rw_1200.jpg?h=f6574ef9f45863ead4815dd48f8fb773 1200w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c65f297a-d986-4c9a-9e84-6dfa96215f92_rw_1920.jpg?h=8baa34c9d52a25608f9d236e3bd4adc9 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c65f297a-d986-4c9a-9e84-6dfa96215f92_rw_1920.jpg?h=8baa34c9d52a25608f9d236e3bd4adc9"
+        data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c65f297a-d986-4c9a-9e84-6dfa96215f92_rw_600.jpg?h=ec5cddc324bc5d2f31d1277d5c2c80b1 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c65f297a-d986-4c9a-9e84-6dfa96215f92_rw_1200.jpg?h=f6574ef9f45863ead4815dd48f8fb773 1200w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c65f297a-d986-4c9a-9e84-6dfa96215f92_rw_1920.jpg?h=8baa34c9d52a25608f9d236e3bd4adc9 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:177.8%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="146.27285513361" style="width:146.27285513361px; flex-grow:146.27285513361;" data-width="1920" data-height="3412">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c7a3c8e1-b594-40e8-8a1b-e04f6bbbeb48_rw_1920.jpg?h=10f74cde1026afd78b602a2cbd6b1093" srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c7a3c8e1-b594-40e8-8a1b-e04f6bbbeb48_rw_600.jpg?h=7148de97bcfa784682ee04944527e935 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c7a3c8e1-b594-40e8-8a1b-e04f6bbbeb48_rw_1200.jpg?h=5dc8ea1dfc359f26d21bfc2fbb23946a 1200w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c7a3c8e1-b594-40e8-8a1b-e04f6bbbeb48_rw_1920.jpg?h=10f74cde1026afd78b602a2cbd6b1093 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c7a3c8e1-b594-40e8-8a1b-e04f6bbbeb48_rw_1920.jpg?h=10f74cde1026afd78b602a2cbd6b1093"
+        data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c7a3c8e1-b594-40e8-8a1b-e04f6bbbeb48_rw_600.jpg?h=7148de97bcfa784682ee04944527e935 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c7a3c8e1-b594-40e8-8a1b-e04f6bbbeb48_rw_1200.jpg?h=5dc8ea1dfc359f26d21bfc2fbb23946a 1200w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/c7a3c8e1-b594-40e8-8a1b-e04f6bbbeb48_rw_1920.jpg?h=10f74cde1026afd78b602a2cbd6b1093 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:177.75%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="346.66666666667" style="width:346.66666666667px; flex-grow:346.66666666667;" data-width="1024" data-height="768">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1bba865d-3fcb-481a-aad2-08904cbe5920_rw_1200.jpg?h=6f77a205eee87de7a4bfa9209068e6eb" srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1bba865d-3fcb-481a-aad2-08904cbe5920_rw_600.jpg?h=eee169c0f379af2d62a0879f3e1cb93e 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1bba865d-3fcb-481a-aad2-08904cbe5920_rw_1200.jpg?h=6f77a205eee87de7a4bfa9209068e6eb 1024w,"  sizes="(max-width: 1024px) 100vw, 1024px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1bba865d-3fcb-481a-aad2-08904cbe5920_rw_1200.jpg?h=6f77a205eee87de7a4bfa9209068e6eb"
+        data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1bba865d-3fcb-481a-aad2-08904cbe5920_rw_600.jpg?h=eee169c0f379af2d62a0879f3e1cb93e 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1bba865d-3fcb-481a-aad2-08904cbe5920_rw_1200.jpg?h=6f77a205eee87de7a4bfa9209068e6eb 1024w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:75%;"></span>
+    </div>
+    <div class="js-grid-spacer"></div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module media_collection project-module-media_collection" data-id="m630f4976ec65251495e4da2171e3b97af2e25baa73aace9c67782"  style="padding-top: px;
+padding-bottom: px;
+">
+  <div class="grid--main js-grid-main" data-grid-max-images="
+  ">
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="146.23172103487" style="width:146.23172103487px; flex-grow:146.23172103487;" data-width="1920" data-height="3413">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/339bf5b4-a63c-42f4-86be-e15b30191219_rw_1920.jpg?h=4ecaae2ed7cafd3c0589e4c8b7631031" srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/339bf5b4-a63c-42f4-86be-e15b30191219_rw_600.jpg?h=130053dd555d6e73eaa79381e93b23f9 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/339bf5b4-a63c-42f4-86be-e15b30191219_rw_1200.jpg?h=0493ec9480e6e872805fca873e9bf4a7 1200w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/339bf5b4-a63c-42f4-86be-e15b30191219_rw_1920.jpg?h=4ecaae2ed7cafd3c0589e4c8b7631031 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/339bf5b4-a63c-42f4-86be-e15b30191219_rw_1920.jpg?h=4ecaae2ed7cafd3c0589e4c8b7631031"
+        data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/339bf5b4-a63c-42f4-86be-e15b30191219_rw_600.jpg?h=130053dd555d6e73eaa79381e93b23f9 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/339bf5b4-a63c-42f4-86be-e15b30191219_rw_1200.jpg?h=0493ec9480e6e872805fca873e9bf4a7 1200w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/339bf5b4-a63c-42f4-86be-e15b30191219_rw_1920.jpg?h=4ecaae2ed7cafd3c0589e4c8b7631031 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:177.8%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="346.66666666667" style="width:346.66666666667px; flex-grow:346.66666666667;" data-width="1024" data-height="768">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/591a38da-89b9-4470-bdf0-96af9c9965b9_rw_1200.jpg?h=13565bbc2e2d5020eaeffc1637707f1c" srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/591a38da-89b9-4470-bdf0-96af9c9965b9_rw_600.jpg?h=35f417ff23fcf0b0b55f5d652c0a8455 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/591a38da-89b9-4470-bdf0-96af9c9965b9_rw_1200.jpg?h=13565bbc2e2d5020eaeffc1637707f1c 1024w,"  sizes="(max-width: 1024px) 100vw, 1024px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/591a38da-89b9-4470-bdf0-96af9c9965b9_rw_1200.jpg?h=13565bbc2e2d5020eaeffc1637707f1c"
+        data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/591a38da-89b9-4470-bdf0-96af9c9965b9_rw_600.jpg?h=35f417ff23fcf0b0b55f5d652c0a8455 600w,https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/591a38da-89b9-4470-bdf0-96af9c9965b9_rw_1200.jpg?h=13565bbc2e2d5020eaeffc1637707f1c 1024w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:75%;"></span>
+    </div>
+    <div class="js-grid-spacer"></div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              <div class="project-module module video project-module-video js-js-project-module">
+    <div class="embed-dimensions" style="max-width: 1920px; max-height: 1080px; margin: 0 auto;">
+    <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0px;">
+        <iframe title="Video Player" class="embed-content" src="https://www-ccv.adobe.io/v1/player/ccv/7bzIyh6TYBb/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+    </div>
+
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+          <section class="other-projects" data-context="page.page.other_pages" data-hover-hint="otherPages">
+            <div class="title-wrapper">
+              <div class="title-container">
+                  <h3 class="other-projects-title preserve-whitespace">You may also like</h3>
+              </div>
+            </div>
+            <div class="project-covers">
+                  <a class="project-cover js-project-cover-touch hold-space" href="/bending-spoons" data-context="pages" data-identity="id:p5dde8d9033b6e2261879f812dfbee24ccba74e37b61b2cae7bb24">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/6c2e396c-dd83-48a3-a2e9-8f17a0d62d0a_rwc_645x72x1048x1048x32.jpg?h=c2ea0691bc635949f8c6498081f683f9"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/6c2e396c-dd83-48a3-a2e9-8f17a0d62d0a_rwc_645x72x1048x1048x1048.jpg?h=a7eb524c10bddc810286bdc2950ea679"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/6c2e396c-dd83-48a3-a2e9-8f17a0d62d0a_rwc_645x72x1048x1048x640.jpg?h=f986ecb59d29dcb68187a43f491ae65a 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/6c2e396c-dd83-48a3-a2e9-8f17a0d62d0a_rwc_645x72x1048x1048x1280.jpg?h=01bbe7c51302cb14c9501ff9f613c141 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/6c2e396c-dd83-48a3-a2e9-8f17a0d62d0a_rwc_645x72x1048x1048x1366.jpg?h=42207bf5e4b2f45c6f898a04f5fe7fc3 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/6c2e396c-dd83-48a3-a2e9-8f17a0d62d0a_rwc_645x72x1048x1048x1048.jpg?h=a7eb524c10bddc810286bdc2950ea679 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/6c2e396c-dd83-48a3-a2e9-8f17a0d62d0a_rwc_645x72x1048x1048x1048.jpg?h=a7eb524c10bddc810286bdc2950ea679 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/6c2e396c-dd83-48a3-a2e9-8f17a0d62d0a_rwc_645x72x1048x1048x1048.jpg?h=a7eb524c10bddc810286bdc2950ea679 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Bending Spoons Milan</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="/femmegym-amsterdam" data-context="pages" data-identity="id:p5d5984ae5708c461f2e84e17f6da0827252b6057158168592bfe5">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/075ec1a0-216b-4974-b1e1-83098a075b5b_rwc_535x0x1200x1200x32.jpg?h=ad2d6df090718c029eccc4e9fc2b04ac"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/075ec1a0-216b-4974-b1e1-83098a075b5b_rwc_535x0x1200x1200x1200.jpg?h=9dfe2e5ea604a7f299d0c602ee18b642"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/075ec1a0-216b-4974-b1e1-83098a075b5b_rwc_535x0x1200x1200x640.jpg?h=b1073db1f9e3d5b6fa450cc3fadc5473 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/075ec1a0-216b-4974-b1e1-83098a075b5b_rwc_535x0x1200x1200x1280.jpg?h=1058239c0065817219a10342b5c4a993 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/075ec1a0-216b-4974-b1e1-83098a075b5b_rwc_535x0x1200x1200x1366.jpg?h=fe2ea56eea54acd875a751d0bc83ed63 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/075ec1a0-216b-4974-b1e1-83098a075b5b_rwc_535x0x1200x1200x1200.jpg?h=9dfe2e5ea604a7f299d0c602ee18b642 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/075ec1a0-216b-4974-b1e1-83098a075b5b_rwc_535x0x1200x1200x1200.jpg?h=9dfe2e5ea604a7f299d0c602ee18b642 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/075ec1a0-216b-4974-b1e1-83098a075b5b_rwc_535x0x1200x1200x1200.jpg?h=9dfe2e5ea604a7f299d0c602ee18b642 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">FemmeGym Amsterdam</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="/elastic-amsterdam" data-context="pages" data-identity="id:p5c35bda46e693e7fc155090bf77205287c36882216c9d56b6bde9">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/9ba23752-014f-4856-8340-dea082fa57c8_rwc_95x0x400x400x32.jpg?h=7d4528557ca3be497580cd24e36494c5"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/9ba23752-014f-4856-8340-dea082fa57c8_rwc_95x0x400x400x400.jpg?h=d08074cdadb03da14cf11450b6e6cbf2"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/9ba23752-014f-4856-8340-dea082fa57c8_rwc_95x0x400x400x400.jpg?h=d08074cdadb03da14cf11450b6e6cbf2 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/9ba23752-014f-4856-8340-dea082fa57c8_rwc_95x0x400x400x400.jpg?h=d08074cdadb03da14cf11450b6e6cbf2 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/9ba23752-014f-4856-8340-dea082fa57c8_rwc_95x0x400x400x400.jpg?h=d08074cdadb03da14cf11450b6e6cbf2 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/9ba23752-014f-4856-8340-dea082fa57c8_rwc_95x0x400x400x400.jpg?h=d08074cdadb03da14cf11450b6e6cbf2 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/9ba23752-014f-4856-8340-dea082fa57c8_rwc_95x0x400x400x400.jpg?h=d08074cdadb03da14cf11450b6e6cbf2 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/9ba23752-014f-4856-8340-dea082fa57c8_rwc_95x0x400x400x400.jpg?h=d08074cdadb03da14cf11450b6e6cbf2 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Elastic Amsterdam</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="/stayokay-amsterdam" data-context="pages" data-identity="id:p58d8130934ac0158b7785ffc81f8a85af7d8937a324d0c9ccd908">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/98bc4237d44f8924c9c5fbdf_rwc_0x0x501x501x32.png?h=6692e7e989c4bcba18180ecc39a63d4f"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/98bc4237d44f8924c9c5fbdf_rwc_0x0x501x501x501.png?h=307d97d6d1718e65963154d9043f71d0"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/98bc4237d44f8924c9c5fbdf_rwc_0x0x501x501x501.png?h=307d97d6d1718e65963154d9043f71d0 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/98bc4237d44f8924c9c5fbdf_rwc_0x0x501x501x501.png?h=307d97d6d1718e65963154d9043f71d0 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/98bc4237d44f8924c9c5fbdf_rwc_0x0x501x501x501.png?h=307d97d6d1718e65963154d9043f71d0 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/98bc4237d44f8924c9c5fbdf_rwc_0x0x501x501x501.png?h=307d97d6d1718e65963154d9043f71d0 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/98bc4237d44f8924c9c5fbdf_rwc_0x0x501x501x501.png?h=307d97d6d1718e65963154d9043f71d0 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/98bc4237d44f8924c9c5fbdf_rwc_0x0x501x501x501.png?h=307d97d6d1718e65963154d9043f71d0 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Stayokay Amsterdam</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="/linge-college" data-context="pages" data-identity="id:p630f49763825b7ad7680e86d5f4a5d6f9fbb952910302c5a5a78a">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/5dbc0ee4-ea16-49a6-8b5b-2470a03be831_carw_1x1x32.jpg?h=439efe0c5a615b2b3b22466e0dc817ef"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/5dbc0ee4-ea16-49a6-8b5b-2470a03be831_car_1x1.jpg?h=d6dbefb25121cc3b97995846af63f097"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/5dbc0ee4-ea16-49a6-8b5b-2470a03be831_carw_1x1x640.jpg?h=0fe26285f172d534611f506154b0d49b 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/5dbc0ee4-ea16-49a6-8b5b-2470a03be831_carw_1x1x1280.jpg?h=e902d8d5de0f27f4fe1e2d8f57cd83a9 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/5dbc0ee4-ea16-49a6-8b5b-2470a03be831_carw_1x1x1366.jpg?h=42d6b355ae034d3b79558ed8e1061e4a 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/5dbc0ee4-ea16-49a6-8b5b-2470a03be831_carw_1x1x1920.jpg?h=d5356d7bc074b08777c9f028046bc15a 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/5dbc0ee4-ea16-49a6-8b5b-2470a03be831_carw_1x1x2560.jpg?h=3dd648696077e44e6b160abd9d520093 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/5dbc0ee4-ea16-49a6-8b5b-2470a03be831_carw_1x1x5120.jpg?h=9ca24b1d5ab48e1b3af2594697882416 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Linge College</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="/the-window-show-kookboekhandel" data-context="pages" data-identity="id:p5a806dee5222a8b606c53142d61ecba35d498154fface9f3e9840">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/d1f06fcb-e79f-4d26-ab95-664906462c02_rwc_0x0x500x500x32.jpg?h=3b4c4b32d0bcea7904ee751279c2b93a"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/d1f06fcb-e79f-4d26-ab95-664906462c02_rwc_0x0x500x500x500.jpg?h=2097c2a649c142cac8a18725e8ae394d"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/d1f06fcb-e79f-4d26-ab95-664906462c02_rwc_0x0x500x500x500.jpg?h=2097c2a649c142cac8a18725e8ae394d 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/d1f06fcb-e79f-4d26-ab95-664906462c02_rwc_0x0x500x500x500.jpg?h=2097c2a649c142cac8a18725e8ae394d 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/d1f06fcb-e79f-4d26-ab95-664906462c02_rwc_0x0x500x500x500.jpg?h=2097c2a649c142cac8a18725e8ae394d 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/d1f06fcb-e79f-4d26-ab95-664906462c02_rwc_0x0x500x500x500.jpg?h=2097c2a649c142cac8a18725e8ae394d 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/d1f06fcb-e79f-4d26-ab95-664906462c02_rwc_0x0x500x500x500.jpg?h=2097c2a649c142cac8a18725e8ae394d 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/d1f06fcb-e79f-4d26-ab95-664906462c02_rwc_0x0x500x500x500.jpg?h=2097c2a649c142cac8a18725e8ae394d 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">The Window Show</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="/atlassian-amsterdam-1" data-context="pages" data-identity="id:p5ae623e86ecc2328341f30b4859ebb3153cb8d91b83999c36c847">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/08374334-f837-42da-94eb-2a6939450760_rwc_255x36x865x865x32.jpg?h=d7c63dba5a8603d069d271cf895cb698"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/08374334-f837-42da-94eb-2a6939450760_rwc_255x36x865x865x865.jpg?h=705be39c1897912d3764a50ab27555df"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/08374334-f837-42da-94eb-2a6939450760_rwc_255x36x865x865x640.jpg?h=e52e7639623c8917a1c9be6ebfda68e9 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/08374334-f837-42da-94eb-2a6939450760_rwc_255x36x865x865x1280.jpg?h=0a5774d6642a677f5c14517fa7c7d314 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/08374334-f837-42da-94eb-2a6939450760_rwc_255x36x865x865x1366.jpg?h=cc091fdddfad8e6234c41a5e36738e62 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/08374334-f837-42da-94eb-2a6939450760_rwc_255x36x865x865x1920.jpg?h=65fa3137e2e78210d5c3bf8bb08c327f 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/08374334-f837-42da-94eb-2a6939450760_rwc_255x36x865x865x865.jpg?h=705be39c1897912d3764a50ab27555df 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/08374334-f837-42da-94eb-2a6939450760_rwc_255x36x865x865x865.jpg?h=705be39c1897912d3764a50ab27555df 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Atlassian Amsterdam</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="/maker-market-amsterdam" data-context="pages" data-identity="id:p590a1daa9bf2854598f638b86a0e48aef2c496bcb0af8ba0fff84">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1e062665-5476-4b45-9421-59e75888aa02_rwc_0x0x501x501x32.jpg?h=676f4140c02a5753020b18bb1bffa5a0"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1e062665-5476-4b45-9421-59e75888aa02_rwc_0x0x501x501x501.jpg?h=48bceba08937ebe0ba2d19de6ace54bc"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1e062665-5476-4b45-9421-59e75888aa02_rwc_0x0x501x501x501.jpg?h=48bceba08937ebe0ba2d19de6ace54bc 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1e062665-5476-4b45-9421-59e75888aa02_rwc_0x0x501x501x501.jpg?h=48bceba08937ebe0ba2d19de6ace54bc 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1e062665-5476-4b45-9421-59e75888aa02_rwc_0x0x501x501x501.jpg?h=48bceba08937ebe0ba2d19de6ace54bc 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1e062665-5476-4b45-9421-59e75888aa02_rwc_0x0x501x501x501.jpg?h=48bceba08937ebe0ba2d19de6ace54bc 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1e062665-5476-4b45-9421-59e75888aa02_rwc_0x0x501x501x501.jpg?h=48bceba08937ebe0ba2d19de6ace54bc 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/1e062665-5476-4b45-9421-59e75888aa02_rwc_0x0x501x501x501.jpg?h=48bceba08937ebe0ba2d19de6ace54bc 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Maker Market Amsterdam</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="/atlassian-amsterdam" data-context="pages" data-identity="id:p594f8c1dea94bc517ca25c73acc5304cdca815738b66e29e25506">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/cc63698c-af86-434b-9bf0-0ed194a75cfc_rwc_629x151x962x962x32.jpg?h=69561877f15eeca0404cfa691ac10316"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/cc63698c-af86-434b-9bf0-0ed194a75cfc_rwc_629x151x962x962x962.jpg?h=bd5e61f38e45d9e6d5028f9aa48e66fe"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/cc63698c-af86-434b-9bf0-0ed194a75cfc_rwc_629x151x962x962x640.jpg?h=6464e9a454af89231507c0f6b338412b 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/cc63698c-af86-434b-9bf0-0ed194a75cfc_rwc_629x151x962x962x1280.jpg?h=00befc8d359bedf6c44813ac1a0ad9f7 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/cc63698c-af86-434b-9bf0-0ed194a75cfc_rwc_629x151x962x962x1366.jpg?h=0c37b5f40a4f6a5fcee48e330de96e85 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/cc63698c-af86-434b-9bf0-0ed194a75cfc_rwc_629x151x962x962x962.jpg?h=bd5e61f38e45d9e6d5028f9aa48e66fe 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/cc63698c-af86-434b-9bf0-0ed194a75cfc_rwc_629x151x962x962x962.jpg?h=bd5e61f38e45d9e6d5028f9aa48e66fe 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/cc63698c-af86-434b-9bf0-0ed194a75cfc_rwc_629x151x962x962x962.jpg?h=bd5e61f38e45d9e6d5028f9aa48e66fe 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Atlassian Amsterdam</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="/brouwerij-troost" data-context="pages" data-identity="id:p5fba1fb5a621b361a43b37f2c1b27e5f55b7131c12ce658853d5f">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/2a2d64d9-ef78-4279-913f-2ef388dae439_rwc_1271x219x2102x2102x32.jpg?h=379c40072112b40de048000a15cf829d"
+              data-src="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/2a2d64d9-ef78-4279-913f-2ef388dae439_rwc_1271x219x2102x2102x2102.jpg?h=8b3cdb21d8e5db432be1abfb310473e4"
+              data-srcset="https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/2a2d64d9-ef78-4279-913f-2ef388dae439_rwc_1271x219x2102x2102x640.jpg?h=412382ea11b36d931c0d1556d64e739c 640w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/2a2d64d9-ef78-4279-913f-2ef388dae439_rwc_1271x219x2102x2102x1280.jpg?h=35babf25f65ac0458b696fae627466e9 1280w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/2a2d64d9-ef78-4279-913f-2ef388dae439_rwc_1271x219x2102x2102x1366.jpg?h=874cb695472a9130ff528d6550b73953 1366w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/2a2d64d9-ef78-4279-913f-2ef388dae439_rwc_1271x219x2102x2102x1920.jpg?h=5fca69810fec094974a75ce85658edb6 1920w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/2a2d64d9-ef78-4279-913f-2ef388dae439_rwc_1271x219x2102x2102x2560.jpg?h=ea851450a8c5e40c22f205a09076accf 2560w, https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/2a2d64d9-ef78-4279-913f-2ef388dae439_rwc_1271x219x2102x2102x2102.jpg?h=8b3cdb21d8e5db432be1abfb310473e4 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Brouwerij Troost Amsterdam</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+          </section>
+        <section class="back-to-top" data-hover-hint="backToTop">
+          <a href="#"><span class="arrow">&uarr;</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"/>
+          </g>
+          </svg>
+        </a>
+  </div>
+              <footer class="site-footer" data-hover-hint="footer">
+                  <div class="social pf-footer-social" data-context="theme.footer" data-hover-hint="footerSocialIcons">
+                    <ul>
+                            <li>
+                              <a href="http://instagram.com/wallnutsmurals" target="_blank">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                                <g>
+                                  <path d="M15,5.4c2.1,0,2.4,0,3.2,0c0.8,0,1.2,0.2,1.5,0.3c0.4,0.1,0.6,0.3,0.9,0.6c0.3,0.3,0.5,0.5,0.6,0.9
+                                    c0.1,0.3,0.2,0.7,0.3,1.5c0,0.8,0,1.1,0,3.2s0,2.4,0,3.2c0,0.8-0.2,1.2-0.3,1.5c-0.1,0.4-0.3,0.6-0.6,0.9c-0.3,0.3-0.5,0.5-0.9,0.6
+                                    c-0.3,0.1-0.7,0.2-1.5,0.3c-0.8,0-1.1,0-3.2,0s-2.4,0-3.2,0c-0.8,0-1.2-0.2-1.5-0.3c-0.4-0.1-0.6-0.3-0.9-0.6
+                                    c-0.3-0.3-0.5-0.5-0.6-0.9c-0.1-0.3-0.2-0.7-0.3-1.5c0-0.8,0-1.1,0-3.2s0-2.4,0-3.2c0-0.8,0.2-1.2,0.3-1.5c0.1-0.4,0.3-0.6,0.6-0.9
+                                    c0.3-0.3,0.5-0.5,0.9-0.6c0.3-0.1,0.7-0.2,1.5-0.3C12.6,5.4,12.9,5.4,15,5.4 M15,4c-2.2,0-2.4,0-3.3,0c-0.9,0-1.4,0.2-1.9,0.4
+                                    c-0.5,0.2-1,0.5-1.4,0.9C7.9,5.8,7.6,6.2,7.4,6.8C7.2,7.3,7.1,7.9,7,8.7C7,9.6,7,9.8,7,12s0,2.4,0,3.3c0,0.9,0.2,1.4,0.4,1.9
+                                    c0.2,0.5,0.5,1,0.9,1.4c0.4,0.4,0.9,0.7,1.4,0.9c0.5,0.2,1.1,0.3,1.9,0.4c0.9,0,1.1,0,3.3,0s2.4,0,3.3,0c0.9,0,1.4-0.2,1.9-0.4
+                                    c0.5-0.2,1-0.5,1.4-0.9c0.4-0.4,0.7-0.9,0.9-1.4c0.2-0.5,0.3-1.1,0.4-1.9c0-0.9,0-1.1,0-3.3s0-2.4,0-3.3c0-0.9-0.2-1.4-0.4-1.9
+                                    c-0.2-0.5-0.5-1-0.9-1.4c-0.4-0.4-0.9-0.7-1.4-0.9c-0.5-0.2-1.1-0.3-1.9-0.4C17.4,4,17.2,4,15,4L15,4L15,4z"/>
+                                  <path d="M15,7.9c-2.3,0-4.1,1.8-4.1,4.1s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S17.3,7.9,15,7.9L15,7.9z M15,14.7c-1.5,0-2.7-1.2-2.7-2.7
+                                    c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7C17.7,13.5,16.5,14.7,15,14.7L15,14.7z"/>
+                                  <path d="M20.2,7.7c0,0.5-0.4,1-1,1s-1-0.4-1-1s0.4-1,1-1S20.2,7.2,20.2,7.7L20.2,7.7z"/>
+                                </g>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://dribbble.com/Wallnuts-Murals" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 30 24" xml:space="preserve" class="icon"><path d="M15 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c4.41 0 8 3.6 8 8S19.41 20 15 20L15 20z M21.75 13.1 c-0.23-0.07-2.12-0.64-4.26-0.29c0.89 2.5 1.3 4.5 1.3 4.87C20.35 16.6 21.4 15 21.8 13.1L21.75 13.1z M17.67 18.3 c-0.1-0.6-0.5-2.69-1.46-5.18c-0.02 0-0.03 0.01-0.05 0.01c-3.85 1.34-5.24 4.02-5.36 4.27c1.16 0.9 2.6 1.4 4.2 1.4 C15.95 18.8 16.9 18.6 17.7 18.3L17.67 18.3z M9.92 16.58c0.15-0.27 2.03-3.37 5.55-4.51c0.09-0.03 0.18-0.06 0.27-0.08 c-0.17-0.39-0.36-0.78-0.55-1.16c-3.41 1.02-6.72 0.98-7.02 0.97c0 0.1 0 0.1 0 0.21C8.17 13.8 8.8 15.4 9.9 16.58L9.92 16.6 z M8.31 10.61c0.31 0 3.1 0 6.32-0.83c-1.13-2.01-2.35-3.7-2.53-3.95C10.18 6.7 8.8 8.5 8.3 10.61L8.31 10.61z M13.4 5.4 c0.19 0.2 1.4 1.9 2.5 4c2.43-0.91 3.46-2.29 3.58-2.47C18.32 5.8 16.7 5.2 15 5.18C14.45 5.2 13.9 5.2 13.4 5.4 L13.4 5.37z M20.29 7.69c-0.14 0.19-1.29 1.66-3.82 2.69c0.16 0.3 0.3 0.7 0.5 0.99c0.05 0.1 0.1 0.2 0.1 0.3 c2.27-0.29 4.5 0.2 4.8 0.22C21.82 10.3 21.2 8.8 20.3 7.69L20.29 7.69z"/></svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="http://vimeo.com/wallnutsmurals" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" viewBox="0 0 30 24" xml:space="preserve" class="icon"><path d="M23.99 7.7c-0.08 1.8-1.3 4.27-3.67 7.4c-2.45 3.27-4.52 4.9-6.21 4.9c-1.05 0-1.94-0.99-2.66-2.99 c-0.48-1.82-0.97-3.65-1.45-5.48C9.46 9.6 8.9 8.6 8.3 8.55c-0.13 0-0.61 0.29-1.41 0.87L6 8.3C6.89 7.5 7.8 6.7 8.6 5.9 c1.18-1.05 2.07-1.61 2.67-1.66c1.4-0.14 2.3 0.8 2.6 2.95c0.35 2.3 0.6 3.7 0.7 4.24c0.4 1.9 0.8 2.8 1.3 2.8 c0.38 0 0.94-0.61 1.7-1.84c0.75-1.22 1.16-2.16 1.21-2.79c0.11-1.06-0.3-1.59-1.21-1.59c-0.43 0-0.88 0.1-1.33 0.3 c0.88-2.98 2.58-4.43 5.07-4.34C23.23 4.1 24.1 5.3 24 7.7z"/></svg>
+                              </a>
+                            </li>
+                    </ul>
+                  </div>
+                <div class="footer-text">
+                  Wallnuts Murals © 2019 - Amsterdam - hello@wallnutsmurals.com
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":34,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p630f497704989b05b5fd3143539322349dbc281962bcf9dac2686","theme":{"name":"marta"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":false},"cookie_banner":{"enabled":false},"googleAnalytics":{"trackingCode":"UA-154473248-1","anonymization":false}};</script>
+  <script type="text/javascript" src="/site/translations?cb=3d952059082ae6ff7df21dae137e18c22c96e17f"></script>
+  <script type="text/javascript" src="/dist/js/main.js?cb=3d952059082ae6ff7df21dae137e18c22c96e17f"></script>
+</html>
